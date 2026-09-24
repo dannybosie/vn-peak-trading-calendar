@@ -1,0 +1,41 @@
+{
+  "name": "vn-peak-trading-calendar",
+  "version": "1.0.0",
+  "description": "Campaign Seasonality Intelligence for Vietnam e-commerce. Sale days, holidays and gifting dates as subscribable calendar feeds, with lunar dates computed for the Vietnamese calendar.",
+  "type": "module",
+  "bin": {
+    "vn-peak": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "vietnam",
+    "ecommerce",
+    "calendar",
+    "ics",
+    "lunar-calendar",
+    "am-lich",
+    "marketing",
+    "shopee",
+    "tiktok-shop",
+    "holidays"
+  ],
+  "author": "Thinh Nguyen (Danny)",
+  "license": "MIT",
+  "repository": "github:dannybosie/vn-peak-trading-calendar",
+  "homepage": "https://dannybosie.github.io/vn-peak-trading-calendar/",
+  "devDependencies": {
+    "@types/node": "^24.13.6",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,81 @@
+/* Shared look for dannybosie tools. Light and dark from the same tokens. */
+:root {
+  --bg: #ffffff;
+  --panel: #f6f8fa;
+  --ink: #111111;
+  --muted: #59636e;
+  --border: #d0d7de;
+  --accent: #1a7f37;
+  --accent-ink: #ffffff;
+  --accent-soft: #dafbe1;
+  --warn: #9a6700;
+  --warn-soft: #fff8c5;
+  --err: #cf222e;
+  --err-soft: #ffebe9;
+  --info: #0969da;
+  --info-soft: #ddf4ff;
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --ink: #f0f3f6;
+    --muted: #9198a1;
+    --border: #30363d;
+    --accent: #3fb950;
+    --accent-ink: #0d1117;
+    --accent-soft: #12261e;
+    --warn: #d29922;
+    --warn-soft: #272115;
+    --err: #f85149;
+    --err-soft: #2d1619;
+    --info: #4493f8;
+    --info-soft: #121d2f;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: 16px/1.55 var(--font); -webkit-font-smoothing: antialiased; }
+a { color: var(--info); }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+header.top { padding: 40px 0 24px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+.eyebrow { font: 12px/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.eyebrow a { color: inherit; text-decoration: none; }
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 10px; }
+.tagline { font-size: 18px; margin: 0 0 6px; font-weight: 600; }
+.lede { color: var(--muted); margin: 0; max-width: 720px; }
+h2 { font-size: 18px; margin: 32px 0 12px; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--mono); }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px; font: 600 14px/1 var(--font);
+  padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--ink); cursor: pointer; text-decoration: none;
+}
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+textarea, input, select {
+  font: 15px/1.5 var(--font); color: var(--ink); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; width: 100%;
+}
+textarea:focus, input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+label { display: block; font-size: 13px; font-weight: 600; margin: 0 0 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.tag { display: inline-block; font: 600 11px/1 var(--mono); padding: 4px 6px; border-radius: 6px; background: var(--panel); border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+.tag.err { background: var(--err-soft); color: var(--err); border-color: transparent; }
+.tag.warn { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.tag.info { background: var(--info-soft); color: var(--info); border-color: transparent; }
+.tag.ok { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+footer.bottom { margin: 56px 0 40px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+footer.bottom ul { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+footer.bottom a { color: var(--ink); }
+.table-scroll { overflow-x: auto; }
