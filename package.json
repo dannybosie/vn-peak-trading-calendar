@@ -1,7 +1,7 @@
 {
   "name": "vn-peak-trading-calendar",
   "version": "1.0.0",
-  "description": "Campaign Seasonality Intelligence for Vietnam e-commerce. Sale days, holidays and gifting dates as subscribable calendar feeds, with lunar dates computed for the Vietnamese calendar.",
+  "description": "Vietnam e-commerce sale days, holidays and gifting dates as subscribable calendar feeds, with lunar dates computed for the Vietnamese calendar.",
   "type": "module",
   "bin": {
     "vn-peak": "dist/cli.js"

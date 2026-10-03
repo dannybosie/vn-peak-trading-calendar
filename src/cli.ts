@@ -7,7 +7,7 @@ import { lunarToSolar, solarToLunar } from "./core/lunar.ts";
 
 const VERSION = "1.0.0";
 const HELP = `vn-peak ${VERSION}
-Campaign Seasonality Intelligence for Vietnam e-commerce: sale days, holidays and
+A campaign planning calendar for Vietnam e-commerce: sale days, holidays and
 gifting dates, with lunar dates computed for the Vietnamese calendar.
 
 Usage

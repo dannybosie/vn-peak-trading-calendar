@@ -623,7 +623,7 @@ function feedEvents(feed, events) {
 // src/cli.ts
 var VERSION = "1.0.0";
 var HELP = `vn-peak ${VERSION}
-Campaign Seasonality Intelligence for Vietnam e-commerce: sale days, holidays and
+A campaign planning calendar for Vietnam e-commerce: sale days, holidays and
 gifting dates, with lunar dates computed for the Vietnamese calendar.
 
 Usage

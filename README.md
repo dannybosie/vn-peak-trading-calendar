@@ -1,6 +1,6 @@
 # VN Peak Trading Calendar
 
-**Campaign Seasonality Intelligence for Vietnam e-commerce.** Every marketplace sale day, statutory holiday and gifting date that moves demand in Vietnam, as calendar feeds you subscribe to once, with a prep reminder before each tentpole.
+**A campaign planning calendar for Vietnam e-commerce.** Every marketplace sale day, statutory holiday and gifting date that moves demand in Vietnam, as calendar feeds you subscribe to once, with a prep reminder before each tentpole.
 
 **[Open the calendar](https://dannybosie.github.io/vn-peak-trading-calendar/)** to see what is coming up, plan a year, or subscribe in Google Calendar, Apple Calendar or Outlook.
 
